@@ -22,6 +22,7 @@
             colors: {
               clifford: '#da373d',
               "primary": '#ABEF5F',
+              
             }
           }
         }
@@ -35,13 +36,13 @@
 </head>
 <body class="font-manrope">
     <header class="container mx-auto">
-       <nav class="px-10 py-2">
-        <div class="navbar bg-base-100">
+       <nav class="md:px-10 py-2 px-0">
+        <div class="navbar bg-base-100 max-sm:flex max-sm:justify-between sm:justify-between">
             <div class="navbar-start">
               <a class="btn btn-ghost text-2xl font-bold">
                 <i class="fa-solid fa-arrow-right bg-primary p-1 rounded-full -rotate-45  text-base"></i>Rinterio</a>
             </div>
-            <div class="navbar-center sm:hidden lg:flex ">
+            <div class="navbar-center max-sm:hidden sm:hidden lg:flex ">
               <ul class="menu menu-horizontal px-1">
                 <li class="font-bold"><a>Home</a></li>
                 <li><a>Service</a></li>
@@ -50,18 +51,116 @@
                 <li><a>Contact Us</a></li>  
               </ul>
             </div>
-                <div class="navbar-end space-x-3 xsm:hidden md:flex">
+                <div class="navbar-end space-x-3 max-sm:hidden sm:hidden md:flex">
                     <div class="p-2 rounded-full shadow-lg"><i class="fa-solid fa-magnifying-glass"></i></div>
                     <div class="p-2 rounded-full shadow-lg"><i class="fa-solid fa-cart-shopping"></i></div>
                     <a class="btn bg-primary rounded-2xl">Book Consult<i class="fa-solid fa-arrow-right bg-black p-1 rounded-full -rotate-45  text-white"></i> </a>
                 </div>
-                <i class="fa-solid fa-bars md:hidden navbar-end"></i>
+                <div class="md:hidden max-sm:block ">
+                   <i class="fa-solid fa-bars p-2 rounded-full shadow-lg"></i>  
+                </div>
           </div>
        </nav>
+
+       <!-- Banner -->
+        <div class="text-center my-5 space-y-5">
+           <img class="mx-auto " src="./assets/banner.png" alt="banner pic">
+           <h1 class="text-5xl font-extrabold text-black">A barn house of this design has a <br> striking appearance</h1>
+           <p class="text-base w-2/3 mx-auto">This barn house design features bold, modern rooflines and materials like metal and glass, large panoramic windows, and clean, sleek finishes, creating a striking contrast with traditional barn aesthetics.</p>
+           <button class="btn rounded-2xl bg-gradient-to-r from-[#ABEF5F] to-[#a6d076] font-bold">View Details<i class="fa-solid fa-arrow-right bg-primary p-1 rounded-full -rotate-45  text-base"></i></button>
+          </div>
     </header>
 
-    <main class="container mx-auto">
+    <main class=" bg-[#F4F4F4]">
+      <div class="container mx-auto">
 
+          <!-- About me -->
+          <section class="py-28 sm:py-10 relative flex max-sm:flex-col justify-between gap-10">
+          <img class="absolute -left-16 top-2 max-sm:-left-20 max-sm:top-10" src="./assets/Vector.png" alt="vector pic">
+  
+              <div class="w-1/2 max-sm:w-full md:space-y-7 max-sm:space-y-6 max-sm:p-3">
+                <div class="badge bg-white p-5 "><i class="fa-solid fa-arrow-right  p-1 rounded-full   text-base"></i>About Me</div>
+                <h1 class="text-5xl font-bold ">We design thoughtful,<br> liveable spaces</h1>
+                <p class="">
+                              The barn house captivates with its blend of rustic charm and 
+            modern sophistication, featuring weathered wood, sleek metal accents.
+                </p>
+                <div class="space-y-5 ">
+                    <div class="card lg:card-side bg-base-100 shadow-xl p-5">
+                      <figure>
+                        <img
+                          src="./assets/commercial.png"
+                          alt="Album" />
+                      </figure>
+                      <div class="card-body">
+                        <h2 class="card-title">Commercial</h2>
+                        <p>The green  house captivates with its blend of rustic charm and modern..</p>
+                       
+                      </div>
+                    </div>
+                    
+                    <div class="card lg:card-side bg-base-100 shadow-xl p-5">
+                      <figure>
+                        <img
+                          src="./assets/residential.png"
+                          alt="Album" />
+                      </figure>
+                      <div class="card-body">
+                        <h2 class="card-title">Residential</h2>
+                        <p>The Residential house captivates with its blend of rustic</p>
+
+                      </div>
+                    </div>
+                </div>
+              </div>
+                <!-- img -->
+              <div class="w-1/2 max-sm:w-full">
+                    <img 
+                      src="./assets/Rectangle.png"
+                      class="w-full rounded-lg shadow-2xl" />
+              </div>
+        </section>
+
+        <!-- Process of works -->
+         <section class="text-center py-28 sm:py-10 space-y-5 ">
+          <div class="badge bg-white p-5 "><i class="fa-solid fa-arrow-right  p-1 rounded-full   text-base"></i>How We Works</div>
+                <h1 class="text-5xl font-bold ">Our Works Process</h1>
+                <p class="">We analyze, plan, execute, monitor, and refine projects to ensure quality and <br> efficiency, adapting to feedback and results.</p>
+                
+                <div class="cards my-5 grid grid-cols-4 gap-16  max-sm:grid-cols-1 max-sm:mx-auto">
+
+                  <div class="card w-1/4 bg-[#E7C1D3] w-96 shadow-xl">
+                    <div class="card-body">
+                      <img class="w-[20%]" src="./assets/concept.png" alt="">
+                      <h2 class="card-title font-bold ">Concept</h2>
+                      <p class="text-left">A concept is an abstract idea or a general notion that represents the essence of something, guiding understanding and design.</p>
+                    </div>
+                  </div>
+                  <div class="card w-1/4 bg-[#EFDA6E] w-96 shadow-xl">
+                    <div class="card-body">
+                      <img class="w-[20%]" src="./assets/flow-chart.png" alt="">
+                      <h2 class="card-title font-bold ">Design Process</h2>
+                      <p class="text-left">A concept is an abstract idea or a general notion that represents the essence of something, guiding understanding and design.</p>
+                    </div>
+                  </div>
+                  <div class="card w-1/4 bg-[#A4DAC3] w-96 shadow-xl">
+                    <div class="card-body">
+                      <img class="w-[20%]" src="./assets/vision.png" alt="">
+                      <h2 class="card-title font-bold ">Supervision</h2>
+                      <p class="text-left">A concept is an abstract idea or a general notion that represents the essence of something, guiding understanding and design.</p>
+                    </div>
+                  </div>
+                  <div class="card w-1/4 bg-[#77AAEA] w-96 shadow-xl">
+                    <div class="card-body">
+                      <img class="w-[20%]" src="./assets/budget-planning.png" alt="">
+                      <h2 class="card-title font-bold ">Budget Planning</h2>
+                      <p class="text-left">A concept is an abstract idea or a general notion that represents the essence of something, guiding understanding and design.</p>
+                    </div>
+                  </div>
+
+                </div>
+         </section>
+      </div>
     </main>
 
     <footer>
